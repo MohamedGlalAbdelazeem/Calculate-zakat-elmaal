@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حساب زكاة المال</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <h1>حساب زكاة المال</h1>
+    <form onsubmit="return false;">
+      <label>المال المملوك:</label>
+      <input type="number" id="totalMoney" placeholder="أدخل المال المملوك" />
+      <button onclick="calculate()">حساب</button>
+    </form>
+    <div class="result" id="result" style="display: none">
+      <p>: الحد الأدنى للمال المطلوب لإخراج زكاة المال هو</p>
+      <p id="zakatMinimum"></p>
+      <p id="result">جنية</p>
+      <p id="myAlert" style="display: none; color: red">
+        خلي بالك لجنة الزكاة والفتوي حددت أن الحد الأدني للزكاة 30 جنيه
+      </p>
+    </div>
+    <footer>
+      <p>
+        Designed by
+        <a href="https://www.facebook.com/profile.php?id=100091937227054"
+          >Mohamed Galal</a
+        >
+        And <a href="https://github.com/Alaa-Eldeyn">Alaa Eldeyn</a>
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
